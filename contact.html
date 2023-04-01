@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neko's Playhouse</title>
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
   </head>
   <body class="container">
-
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,8 +38,6 @@
             </li>
        </div>
     </nav>
-
-    <!-- Background image -->
     <div
       class="p-5 text-center bg-image"
       style="
@@ -52,35 +49,53 @@
         overflow-y: hidden;
         overflow-x: hidden;
       "
-    >
+    > 
+      <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+      
+      <div class="col-sm-3">
+        <!-- Form itself -->
+        <form name="sentMessage" class="well" id="contactForm" novalidate>
+          <legend>Let's Keep in Touch</legend>
+          <div class="control-group">
+            <div class="controls">
+              <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Enter Name" />
+              <p class="help-block"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Enter Email" />
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <textarea rows="10" cols="100" class="form-control" placeholder="Write Message" id="message" required data-validation-required-message="Veuillez entrer votre message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999"
+              style="resize:none"></textarea>
+            </div>
+          </div>
+          <div id="success"></div>
+          <!-- For success/fail messages -->
+          <button type="submit" class="btn btn-primary pull-right">Send</button>
+          <br />
+        </form>
+      </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="text-white">
-            <h1 class="mb-3">NEKOS PLAYHOUSE</h1>
-            <h4 class="mb-3">Who let the dog out?</h4>
+            <a class="btn btn-outline-light btn-lg" href="https://i.giphy.com/media/NCReE76Z1oxAbDVg8A/giphy.webp" role="button">BONK!</a> 
           </div>
         </div>
+      </div>
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; Give_a_Dog_a_Bone 2023
+        </p>
       </div>
     </div>
-    <!-- Background image -->
-    <footer class="py-5 bg-dark">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="text-white">
-              <a class="btn btn-outline-light btn-lg" href="https://i.giphy.com/media/NCReE76Z1oxAbDVg8A/giphy.webp" role="button">BONK!</a> 
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <p class="m-0 text-center text-white">
-            Copyright &copy; Give_a_Dog_a_Bone 2023
-          </p>
-        </div>
-      </div>
-      </footer>
-
-      <script src="node_modules/jquery/dist/jquery.js"></script>
-      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-
-  </body>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
 </html>
